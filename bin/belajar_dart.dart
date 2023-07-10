@@ -19,4 +19,15 @@ void main(List<String> arguments) {
 
     print(array1);
     print(array2);
+
+    // Late = Variable akan muncul ketika functionnya dipanggil
+    late var value = getVariable();
+    print('Ini dipanggil ');
+    print(value);
+
+}
+
+String getVariable(){
+  print("getVariable() dipanggil");
+  return 'OctaaDSP';
 }
