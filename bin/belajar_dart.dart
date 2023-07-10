@@ -1,33 +1,15 @@
 
 void main(List<String> arguments) {
-    var firstName = 'Octaa';
-    var lastName = 'DSP';
+    // Tipe data angka yang bulat
+    int number1 = 30;
+    // TIpe data angka yang bilangan desimal
+    double number2 = 30.5;
 
-    print('My name is : $firstName $lastName');
+    print(number1);
+    print(number2);
 
-    // Const = Nama variable dan isinya tidak bisa dirubah sama sekali (Imutable)
-    // FInal = Nama variablenya tidak boleh dideklarasikan ulang, namun isi nya masih bisa dirubah
-
-    final array1= [1,2,3];
-    const array2= [1,2,3];
-
-    // array1=[0,0,0]; Tidak Bisa
-    // array1[0]=2;
-
-    // array2=[0,0,0]; Tidak Bisa
-    // array2[0]=2; Tidak Bisa
-
-    print(array1);
-    print(array2);
-
-    // Late = Variable akan muncul ketika functionnya dipanggil
-    late var value = getVariable();
-    print('Ini dipanggil ');
-    print(value);
-
-}
-
-String getVariable(){
-  print("getVariable() dipanggil");
-  return 'OctaaDSP';
+    // Tipe data angka yang bisa bilangan bulat dan desimal
+    num number = 30;
+    number = 30.5;
+    print(number);
 }
